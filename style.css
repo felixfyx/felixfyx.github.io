@@ -7,14 +7,47 @@ We want to use these colour palettes:
 #EEEEEE - White
 */
 
+* {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #06113C;
+    color: #EEEEEE;
+}
+
 .sub-title {
     background-color: #FF8C32;
     color: #DDDDDD;
     font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    padding: 1% 2%;
+    border: #DDDDDD 5px solid;
 }
 
-* {
-    background-color: #06113C;
-    font-family: 'Noto Sans', sans-serif;
-    color: #EEEEEE;
+/*
+For some reason, the anchor element within a div will not obey the same rule
+*/
+.sub-title a {
+    background-color: #FF8C32;
+    color: #DDDDDD;
+}
+
+.main-body {
+    margin: 1%;
+}
+
+.main-body footer{
+    background-color: #FF8C32;
+    text-align: center;
+    margin: 10px;
+    padding: 1% 2%;
+    border: #DDDDDD 5px solid;
+}
+
+.main-body footer small {
+    background-color: #FF8C32;
+}
+
+p {
+    margin: 10px;
+    padding: 1% 2%;
 }
