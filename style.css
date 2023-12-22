@@ -6,11 +6,41 @@ We want to use these colour palettes:
 #DDDDDD - Grey
 #EEEEEE - White
 */
+:root {
+    --col1: #06113C;
+    --col2: #FF8C32;
+    --col3: #DDDDDD;
+    --col4: #EEEEEE;
+}
 
 * {
     font-family: 'Noto Sans', sans-serif;
     background-color: #06113C;
-    color: #EEEEEE;
+    color: var(--col4);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    flex: 1;
+    max-width: 200px;
+    background-color: var(--col2);
+    border-radius: 10px;
+    border: 5px solid var(--col4);
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
 }
 
 .sub-title {
@@ -21,18 +51,11 @@ We want to use these colour palettes:
     margin: 10px;
     padding: 1% 2%;
     border: #DDDDDD 5px solid;
-}
-
-/*
-For some reason, the anchor element within a div will not obey the same rule
-*/
-.sub-title a {
-    background-color: #FF8C32;
-    color: #DDDDDD;
+    border-radius: 10px;
 }
 
 .main-body {
-    margin: 1%;
+    margin: 10px;
 }
 
 .main-body footer{
@@ -48,6 +71,5 @@ For some reason, the anchor element within a div will not obey the same rule
 }
 
 p {
-    margin: 10px;
-    padding: 1% 2%;
+    margin-bottom: 10px;
 }

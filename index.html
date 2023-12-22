@@ -35,6 +35,17 @@
             padding: 10px;
         }
 
+        img {
+            border-radius: 50%;
+            border: 5px solid white;
+            height: 240px;
+        }
+
+        @media (max-width: 1250px) {
+            img {
+                height: 120px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -43,23 +54,19 @@
             <a href="/index.html">Felix's Portfolio Site</a>
         </h1>
         <hr/>
-        <!-- // TODO -->
-        <!--
-        <h2><a href="/public/WIP.html">About me</a></h2>
-        <h2><a href="/public/WIP.html">Current Works</a></h2>
-        <h2><a href="/public/WIP.html">Previous Works</a></h2>
+        <div class="nav-menu">
+            <button class="nav-item"><a href="/public/WIP.html">About Me</a></button>
+            <button class="nav-item"><a href="/public/WIP.html">Current Works</a></button>
+            <button class="nav-item"><a href="/public/WIP.html">Previous Works</a></button>
+            <button class="nav-item"><a href="/public/WIP.html">Demos</a></button>
+        </div>
         <hr/>
-        -->
-        <!--
-            1. Put different sections in a div container
-            2. Maybe a flex box or something
-        -->
         <h2 class="sub-title">Who am I?</h2>
         <div>
             <table>
                 <tr>
                     <td>
-                        <p>// Add picture here</p>
+                        <img src="/assets/1640144743624.jpeg" alt="bald guy"/>
                     </td>
                     <td>
                         <p>I am a self-motivated and disciplined software developer currently working and living in Singapore. My background is rooted in game development but I am expanding my skillsets. My hobbies are gaming, practicing Mixed Martial Arts and learning new things.</p>
