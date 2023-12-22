@@ -17,6 +17,7 @@ We want to use these colour palettes:
     font-family: 'Noto Sans', sans-serif;
     background-color: #06113C;
     color: var(--col4);
+    margin: 10px;
 }
 
 a {

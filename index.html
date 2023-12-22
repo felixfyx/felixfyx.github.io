@@ -10,8 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <style>
         li {
-            margin-top: 2%;
-            margin-right: 1%;
+            margin: 10px 20px
         }
 
         .job-title {
@@ -24,8 +23,8 @@
             text-align: center;
         }
 
+        /* CHANGE THE SKILLS STUFF. IT'S VERY UGLY NOW */
         .skill-list {
-
             width: 90%;
             margin-left: 5%;
         }
@@ -35,17 +34,32 @@
             padding: 10px;
         }
 
-        img {
-            border-radius: 50%;
-            border: 5px solid white;
-            height: 240px;
+        .intro {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
         }
 
-        @media (max-width: 1250px) {
-            img {
-                height: 120px;
-            }
+        .intro img {
+            margin-top: 50px;
+            border-radius: 50%;
+            border: 5px solid white;
+            flex: 1;
+            max-width: 300px;
+            width: 45%;
+            min-width: 0;
+            height: auto;
         }
+
+        .intro p {
+            flex: 2;
+            max-width: 600px;
+            margin-bottom: 50px;
+        }
+
     </style>
 </head>
 <body>
@@ -62,8 +76,10 @@
         </div>
         <hr/>
         <h2 class="sub-title">Who am I?</h2>
-        <div>
-            <table>
+        <div class = "intro">
+            <img src="/assets/1640144743624.jpeg" alt="bald guy"/>
+            <p>I am a self-motivated and disciplined software developer currently working and living in Singapore. My background is rooted in game development but I am expanding my skillsets. My hobbies are gaming, practicing Mixed Martial Arts and learning new things.</p>
+            <!-- <table>
                 <tr>
                     <td>
                         <img src="/assets/1640144743624.jpeg" alt="bald guy"/>
@@ -72,7 +88,7 @@
                         <p>I am a self-motivated and disciplined software developer currently working and living in Singapore. My background is rooted in game development but I am expanding my skillsets. My hobbies are gaming, practicing Mixed Martial Arts and learning new things.</p>
                     </td>
                 </tr>
-            </table>
+            </table> -->
         </div>
         <h2 class="sub-title">Technical Skills</h2>
         <h3 class="skill-cat"><u>Programming Skills</u></h3>
