@@ -9,31 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <style>
-        li {
-            margin: 10px 20px
-        }
-
-        .job-title {
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        .skill-cat {
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        /* CHANGE THE SKILLS STUFF. IT'S VERY UGLY NOW */
-        .skill-list {
-            width: 90%;
-            margin-left: 5%;
-        }
-
-        .skill-list tr td {
-            text-align: center;
-            padding: 10px;
-        }
-
         .intro {
             display: flex;
             flex-wrap: wrap;
@@ -60,6 +35,40 @@
             margin-bottom: 50px;
         }
 
+        li {
+            margin: 10px 20px
+        }
+
+        .job-title {
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            border: 10px solid white;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .skills h3 {
+            font-size: 24px;
+            font-style: bolder;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        .skill-list {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 9px;
+        }
+
     </style>
 </head>
 <body>
@@ -79,66 +88,46 @@
         <div class = "intro">
             <img src="/assets/1640144743624.jpeg" alt="bald guy"/>
             <p>I am a self-motivated and disciplined software developer currently working and living in Singapore. My background is rooted in game development but I am expanding my skillsets. My hobbies are gaming, practicing Mixed Martial Arts and learning new things.</p>
-            <!-- <table>
-                <tr>
-                    <td>
-                        <img src="/assets/1640144743624.jpeg" alt="bald guy"/>
-                    </td>
-                    <td>
-                        <p>I am a self-motivated and disciplined software developer currently working and living in Singapore. My background is rooted in game development but I am expanding my skillsets. My hobbies are gaming, practicing Mixed Martial Arts and learning new things.</p>
-                    </td>
-                </tr>
-            </table> -->
         </div>
         <h2 class="sub-title">Technical Skills</h2>
-        <h3 class="skill-cat"><u>Programming Skills</u></h3>
-        <table class="skill-list">
-            <tr>
-                <td>C</td>
-                <td>C++</td>
-                <td>C#</td>
-                <td>Java</td>
-                <td>Golang</td>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>LUA</td>
-                <td>SQL</td>
-                <td>R</td>
-                <td>Flutter</td>
-            </tr>
-        </table>
-        <h3 class="skill-cat"><u>Artistic Tools</u></h3>
-        <table class="skill-list">
-            <tr>
-                <td>Autodesk Motionbuilder</td>
-                <td>Autodesk 3DS-Max</td>
-                <td>Autodesk Maya</td>
-                <td>Adobe Photoshop</td>
-                <td>Adobe Premiere Pro</td>
-            </tr>
-        </table>
-        <h3 class="skill-cat"><u>Others</u></h3>
-        <table class="skill-list">
-            <tr>
-                <td>Machine-Learning</td>
-                <td>Motion Capture</td>
-                <td>Virtual Reality</td>
-                <td>Mixed Reality</td>
-                <td>Image Processing</td>
-            </tr>
-            <tr>
-                <td>Unity</td>
-                <td>AI For Video Games</td>
-                <td>OpenGL</td>
-                <td>Git</td>
-                <td>SVN</td>
-            </tr>
-            <tr>
-                <td>Cybersecurity</td>
-                <td>Cloud Computing</td>
-            </tr>
-        </table>
+        <div class="skills">
+            <h3>Programming Skills</h3>
+            <div class="skill-list">
+                <p>C</p>
+                <p>C++</p>
+                <p>C#</p>
+                <p>Java</p>
+                <p>Golang</p>
+                <p>Python</p>
+                <p>LUA</p>
+                <p>SQL</p>
+                <p>R</p>
+                <p>Flutter</p>
+            </div>
+            <h3>Artistic Tools</h3>
+            <div class="skill-list">
+                <p>Autodesk Motionbuilder</p>
+                <p>Autodesk 3DS-Max</p>
+                <p>Autodesk Maya</p>
+                <p>Adobe Photoshop</p>
+                <p>Adobe Premiere Pro</p>
+            </div>
+            <h3>Others</h3>
+            <div class="skill-list">
+                <p>Machine-Learning</p>
+                <p>Motion Capture</p>
+                <p>Virtual Reality</p>
+                <p>Mixed Reality</p>
+                <p>Image Processing</p>
+                <p>Unity</p>
+                <p>AI For Video Games</p>
+                <p>OpenGL</p>
+                <p>Git</p>
+                <p>SVN</p>
+                <p>Cybersecurity</p>
+                <p>Cloud Computing</p>
+            </div>
+        </div>
         <h2 class="sub-title">Education</h2>
         <ul>
             <li>
