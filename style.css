@@ -6,12 +6,14 @@ We want to use these colour palettes:
 #DDDDDD - Grey
 #EEEEEE - White
 */
+/*
 :root {
     --col1: #06113C;
     --col2: #FF8C32;
     --col3: #DDDDDD;
     --col4: #EEEEEE;
 }
+*/
 
 .vertical-divider {
     flex-shrink: 0;
