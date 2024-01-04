@@ -13,65 +13,26 @@ We want to use these colour palettes:
     --col4: #EEEEEE;
 }
 
-* {
-    font-family: 'Noto Sans', sans-serif;
-    background-color: var(--col1);
-    color: var(--col4);
-    margin: 10px;
+.vertical-divider {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
+.horizontal-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.nav-item {
-    flex: 1;
-    max-width: 200px;
-    background-color: var(--col2);
-    border-radius: 10px;
-    border: 5px solid var(--col4);
-    margin: 10px;
-    padding: 5px;
-    font-weight: bold;
-    font-size: large;
-}
-
-.sub-title {
-    background-color: #FF8C32;
-    color: #DDDDDD;
-    font-size: 32px;
-    font-weight: bolder;
-    text-align: center;
-    margin: 10px;
-    padding: 10px 20px;
-    border: #DDDDDD 5px solid;
-    border-radius: 10px;
-}
-
-.main-body {
-    margin: 10px;
-}
-
-.main-body footer{
-    background-color: #FF8C32;
-    text-align: center;
-    margin: 10px;
-    padding: 1% 2%;
-    border: #DDDDDD 5px solid;
-}
-
-.main-body footer small {
-    background-color: #FF8C32;
-}
-
-p {
-    margin-bottom: 10px;
+.profile-img {
+    height: 10rem;
+    border-radius: 50%;
 }
