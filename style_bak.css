@@ -1,0 +1,77 @@
+/*
+For making use of themes
+We want to use these colour palettes:
+#06113C - Black
+#FF8C32 - Orange
+#DDDDDD - Grey
+#EEEEEE - White
+*/
+:root {
+    --col1: #06113C;
+    --col2: #FF8C32;
+    --col3: #DDDDDD;
+    --col4: #EEEEEE;
+}
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--col1);
+    color: var(--col4);
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    flex: 1;
+    max-width: 200px;
+    background-color: var(--col2);
+    border-radius: 10px;
+    border: 5px solid var(--col4);
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.sub-title {
+    background-color: #FF8C32;
+    color: #DDDDDD;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 20px;
+    border: #DDDDDD 5px solid;
+    border-radius: 10px;
+}
+
+.main-body {
+    margin: 10px;
+}
+
+.main-body footer{
+    background-color: #FF8C32;
+    text-align: center;
+    margin: 10px;
+    padding: 1% 2%;
+    border: #DDDDDD 5px solid;
+}
+
+.main-body footer small {
+    background-color: #FF8C32;
+}
+
+p {
+    margin-bottom: 10px;
+}
