@@ -1,519 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felix's Site</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Felix Foo Yi Xiang - Software Engineer</title>
     <link rel="stylesheet" href="/style.css">
-    <style>
-
-    </style>
 </head>
-
 <body>
-    <!-- NAV BAR -->
-    <!-- TODO: ADD NAVBAR:w
-     -->
-    <!-- NAV BAR END -->
-
-    <main>
-        <section id="hero">
-            <div class="px-4 py-5 my-5 text-center">
-                <img class="d-block mx-auto mb-4 profile-img" src="assets/1640144743624.jpeg" alt="" height="57">
-                <h1 class="display-5 fw-bold text-body-emphasis">Felix Foo</h1>
-                <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4">I am a self-motivated and disciplined software developer currently working and
-                        living in Singapore. My background is rooted in game development but I am expanding my
-                        skillsets. My hobbies are gaming, practicing Mixed Martial Arts and learning new things.</p>
-                    <!-- TODO: Add links to various contacts -->
-                    <!--                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-
-        <div class="horizontal-divider"></div>
-
-        <section id="skills">
-            <div class="px-4 py-5 my-5">
-                <h1 class="display-5 fw-bold text-body-emphasis text-center">Skills</h1>
-                <p class="mx-5 my-5 text-body emphasis text-center">Note that skills here are based on how recent I've
-                    been using it and how confident I am about that particular subject.</p>
-                <h1 class="display-6 fw-semibold mb-5 mx-5">Technical</h1>
-
-                <section id="programming-skill">
-                    <h3 class="mb-5 mx-5">Programming skills</h3>
-                    <!-- On large, we can have the column appear in a row of 2 columns. Else we just let everything appear in a column -->
-                    <div class="d-flex flex-column flex-lg-row justify-content-evenly">
-                        <!-- Col 1-->
-                        <div class="d-flex flex-column flex-fill mx-5">
-                            <p>C++</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="100"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-100 bg-success"></div>
-                            </div>
-                            <p>C</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="100"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-100 bg-success"></div>
-                            </div>
-                            <p>C#</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="100"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-100 bg-success"></div>
-                            </div>
-                            <p>Java</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-75 bg-success"></div>
-                            </div>
-                            <p>LUA</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-50 bg-warning"></div>
-                            </div>
-                            <p>Flutter</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-50 bg-warning"></div>
-                            </div>
-                        </div>
-
-                        <!-- Col 2-->
-                        <div class="d-flex flex-column flex-fill mx-5">
-                            <p>Golang</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="100"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-100 bg-success"></div>
-                            </div>
-                            <p>R</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-50 bg-warning"></div>
-                            </div>
-                            <p>Python</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-75 bg-success"></div>
-                            </div>
-                            <p>HTML/CSS</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-75 bg-success"></div>
-                            </div>
-                            <p>SQL</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-75 bg-success"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="artistic-skill">
-                    <h3 class="my-5 mx-5">Artistic tools</h3>
-                    <!-- On large, we can have the column appear in a row of 2 columns. Else we just let everything appear in a column -->
-                    <div class="d-flex flex-column flex-lg-row justify-content-evenly">
-                        <!-- Col 1-->
-                        <div class="d-flex flex-column flex-fill mx-5">
-                            <p>Autodesk Motionbuilder</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-50 bg-warning"></div>
-                            </div>
-                            <p>Autodesk 3DS-Max</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="100"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-100 bg-success"></div>
-                            </div>
-                            <p>Autodesk Maya</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="100"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-100 bg-success"></div>
-                            </div>
-                        </div>
-
-                        <!-- Col 2-->
-                        <div class="d-flex flex-column flex-fill mx-5">
-                            <p>Adobe Photoshop</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-75 bg-success"></div>
-                            </div>
-                            <p>Adobe Premiere Pro</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-50 bg-warning"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <h1 class="display-6 fw-semibold my-5 mx-5">Non-Technical</h1>
-                <section id="languages">
-                    <h3 class="my-5 mx-5">Languages</h3>
-                    <div class="d-flex flex-column flex-lg-row justify-content-between mx-5">
-                        <div class="flex-fill">
-                            <p>English</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="100"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-100 bg-success"></div>
-                            </div>
-                        </div>
-                        <div class="flex-fill mx-lg-5">
-                            <p>Chinese (华文)</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-75 bg-success"></div>
-                            </div>
-                        </div>
-                        <div class="flex-fill">
-                            <p>Japanese (日本語)</p>
-                            <div class="progress mb-4" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar w-50 bg-warning"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </section>
-
-        <div class="horizontal-divider"></div>
-
-        <!-- TODO: Add timeline!! -->
-        <section id="Education">
-            <div class="px-4 py-5 my-5">
-                <h1 class="display-5 fw-bold text-body-emphasis text-center">Education</h1>
-                <div class="container mt-5 d-flex align-items-center flex-column">
-
-                    <!-- Digipen -->
-                    <div class="card mb-5" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4 d-flex align-items-center">
-                                <a href="https://www.digipen.edu.sg/" target="_blank">
-                                    <img src="/assets/digipen.webp" class="img-fluid rounded-start" alt="digipen">
-                                </a>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Digipen Institute of Technology Singapore</h5>
-                                    <p class="card-text">Bachelor of Science in Computer Science in Real Time
-                                        Interactive Simulation</p>
-                                    <p class="card-text"><small class="text-body-secondary">Graduated in 2019</small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SP -->
-                    <div class="card" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4 d-flex align-items-center p-2">
-                                <a href="https://www.sp.edu.sg/" target="_blank">
-                                    <img src="/assets/sp.png" class="img-fluid rounded-start"
-                                        alt="Singapore Polytechnic">
-                                </a>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Singapore Polytechnic</h5>
-                                    <p class="card-text">Diploma in Information Technology (Game Development) </p>
-                                    <p class="card-text"><small class="text-body-secondary">Graduated in 2013</small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+    <header>
+        <div class="container">
+            <div class="profile-section">
+                <!-- Replace 'your-photo.jpg' with the path to your actual photo -->
+                <img src="assets/1640144743624.jpeg" alt="Felix Foo Yi Xiang" class="profile-photo" onerror="this.style.display='none'">
+                
+                <div class="profile-info">
+                    <h1>Felix Foo Yi Xiang</h1>
+                    <p class="subtitle">Senior Systems Software Engineer</p>
+                    <div class="contact">
+                        <a href="mailto:felixfyx@gmail.com">felixfyx@gmail.com</a>
+                        <a href="tel:+6597108648">+65 97108648</a>
+                        <span>Singapore</span>
                     </div>
                 </div>
             </div>
+        </div>
+    </header>
 
-        </section>
-
-        <div class="horizontal-divider"></div>
-
-        <section id="Work Experience">
-            <div class="px-4 py-5 mt-5">
-                <h1 class="display-5 fw-bold text-body-emphasis text-center mb-5">Work Experience</h1>
-                <div class="container mx-lg-5 my-5 ps-4 border-start border-primary border-5">
-                    <div class="mb-3 border-bottom border-black">
-                        <a href="https://www.a-star.edu.sg/i2r" target="_blank">
-                            <img class="mb-3" src="/assets/astar.png" alt="a-star logo" width="150">
-                        </a>
-                        <h2 class="fw-semibold text-body-emphasis">Agency for Science, Technology and Research (A*STAR)
-                        </h2>
-                    </div>
-                    <h5 class="fw-medium">Research Engineer | 2021 - Present</h3>
-                        <ul>
-                            <li class="mb-2">
-                                Worked as a cybersecurity engineer to implement a Zero Trust Architecture based on NIST
-                                specifications (SP 800-207) with the use of Golang, SQLite and Open Policy Agent (OPA).
-                            </li>
-                            <li class="mb-2">
-                                Worked with various cloud computing platform such as Amazon Web Services and Google
-                                Cloud Platform to bring up services for demoes.
-                            </li>
-                            <li class="mb-2">
-                                Created demos/proof of concepts useful for various industries that utilizes IoT devices
-                                using Java and C.
-                            </li>
-                            <li>
-                                The team was able to capture the attention of various big companies to work with us.
-                            </li>
-                        </ul>
-                </div>
-
-                <div class="container mx-lg-5 my-5 ps-4 border-start border-primary border-5">
-                    <div class="pb-3 mb-3 border-bottom border-black">
-                        <a href="https://smart.mit.edu/" target="_blank">
-                            <img class="mb-3" src="/assets/smart.webp" alt="smart logo" width="150">
-                        </a>
-                        <h2 class="fw-semibold text-body-emphasis">Singapore-MIT Alliance for Research and Technology
-                            (SMART)
-                        </h2>
-                    </div>
-                    <h5 class="fw-medium">Software Engineer | 2020 - 2021</h3>
-                        <ul>
-                            <li class="mb-2">
-                                Worked with both researcher and developer to develop one major part of an urban
-                                simulator.
-                            </li>
-                            <li class="mb-2">
-                                Written documentation in great detail on how a specific model within the simulator
-                                works.
-                            </li>
-                            <li class="mb-2">
-                                Looked into fixing bugs, bottlenecks and improving performance.
-                            </li>
-                            <li class="mb-2">
-                                Contributed to weekly meetings by reporting findings/progress on various features.
-                            </li>
-                            <li>
-                                The team was able to gain better insight on the software through my weekly
-                                contributions.
-                            </li>
-                        </ul>
-                </div>
-
-                <div class="container mx-lg-5 my-5 ps-4 border-start border-primary border-5">
-                    <div class="pb-3 mb-3 border-bottom border-black">
-                        <a href="https://fcl.ethz.ch/research/collaboration/cival.html" target="_blank">
-                            <img class="mb-3" src="/assets/sg-eth.jpg" alt="eth logo" width="150">
-                        </a>
-                        <h2 class="fw-semibold text-body-emphasis">Singapore-ETH Centre
-                        </h2>
-                    </div>
-                    <h5 class="fw-medium">Research Intern | 2018 - 2019</h3>
-                        <ul>
-                            <li class="mb-2">
-                                Worked independently and explored experimental VR/AR technologies and looked into some
-                                practical usage for presentation purposes.
-                            </li>
-                            <li class="mb-2">
-                                Explored topics such as engine development using Vulkan.
-                            </li>
-                            <li class="mb-2">
-                                Explored experimental features from Unity engine such as VFX graph, Shader Graph, ECS.
-                            </li>
-                            <li class="mb-2">
-                                Looked into UI/UX design principles for VR/AR technology to make VR a comfortable
-                                experience.
-                            </li>
-                            <li>
-                                Reported and demonstrated how some of the experimental technologies can be used for the
-                                company's project to the supervisor. Supervisor then takes the demo into consideration.
-                            </li>
-                        </ul>
-                </div>
-
-                <div class="container mx-lg-5 my-5 ps-4 border-start border-primary border-5">
-                    <div class="pb-3 mb-3 border-bottom border-black">
-                        <a href="https://www.snapette.com" target="_blank">
-                            <img class="mb-3" src="/assets/snapette.webp" alt="snapette logo" width="150">
-                        </a>
-                        <h2 class="fw-semibold text-body-emphasis">Snapette Inc
-                        </h2>
-                    </div>
-                    <h5 class="fw-medium">Intern | 2012</h3>
-                        <ul>
-                            <li class="mb-2">
-                                Worked under this startup company as part of the NUS-MDA SHAPE program.
-                            </li>
-                            <li class="mb-2">
-                                Worked on the UI/UX of their Android application with other developers and fixing
-                                graphical bugs.
-                            </li>
-                            <li class="mb-2">
-                                Intensively testing the Android application for bugs manually and noting it down to
-                                discuss it with other developers.
-                            </li>
-                            <li class="mb-2">
-                                Work together with other developers to keep track of bugs and their status to ensure
-                                that there is no clash when it comes to deciding which bugs to fix.
-                            </li>
-                            <li>
-                                Successfully finished the internship in good terms with everyone on board.
-                            </li>
-                        </ul>
-                </div>
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <div class="about-content">
+                <p>Dynamic software engineer with 10+ years of programming expertise across game development, cybersecurity, and VR/AR systems. Proven track record of delivering innovative solutions from concept to market, including successful VR upgrade kits and Zero Trust Architecture implementations. Experienced in leading cross-functional teams and collaborating with international partners to build impactful products.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <div class="horizontal-divider"></div>
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <table class="skills-table">
+                <tbody>
+                    <tr>
+                        <td class="skills-category-name">Programming</td>
+                        <td class="skills-values">C/C++, C#, Java, Python, R, Golang, JavaScript, PHP, SQL</td>
+                    </tr>
+                    <tr>
+                        <td class="skills-category-name">Game Development</td>
+                        <td class="skills-values">Unity, Custom Game Engines, VR/AR/MR Development</td>
+                    </tr>
+                    <tr>
+                        <td class="skills-category-name">Web Development</td>
+                        <td class="skills-values">JavaScript, Node.JS, HTML/CSS, SQL, PHP, Golang</td>
+                    </tr>
+                    <tr>
+                        <td class="skills-category-name">Specialized</td>
+                        <td class="skills-values">IoT, Cybersecurity, Firmware Development, Full-stack Development</td>
+                    </tr>
+                    <tr>
+                        <td class="skills-category-name">Tools</td>
+                        <td class="skills-values">Autodesk Suite (Maya, 3DS Max, MotionBuilder), Adobe Creative Suite (Photoshop, Premiere Pro)</td>
+                    </tr>
+                    <tr>
+                        <td class="skills-category-name">Scripting</td>
+                        <td class="skills-values">Python, R, LUA</td>
+                    </tr>
+                    <tr>
+                        <td class="skills-category-name">Languages</td>
+                        <td class="skills-values">English (Native), Chinese (Mother Tongue), Japanese (JLPT N5)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-        <section id="Project Experience">
-            <div class="px-4 py-5 mt-5">
-                <h1 class="display-5 fw-bold text-body-emphasis text-center">Project Experience</h1>
-                <div class="container mx-lg-5 my-5 ps-4 border-start border-secondary border-5">
-                    <h1 class="fw-semibold text-body-emphasis mb-4">Work Projects</h1>
-
-                    <div class="container mb-5 ps-4 border-start border-primary border-5">
-                        <div class="pb-3 mb-3 border-bottom border-black">
-                            <a href="https://github.com/smart-fm/simmobility-prod" target="_blank">
-                                <img class="mb-3" src="/assets/SimMobility.jpg" alt="SimMobility logo" width="150">
-                            </a>
-                            <h3 class="fw-semibold text-body-emphasis">SimMobility</h3>
+    <section id="experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-info">
+                        <!-- Replace with actual company logo -->
+                        <img src="assets/lai-logo-purple.svg" alt="LAI Games" class="company-logo" onerror="this.style.display='none'">
+                        <div class="job-details">
+                            <div class="job-title">Senior Systems Software Engineer</div>
+                            <div class="company">LAI Games</div>
                         </div>
-                        <ul>
-                            <li class="mb-2">
-                                Worked on this during the time spent in <span
-                                    class="fw-bold text-body-emphasis">SMART</span>.
-                            </li>
-                            <li class="mb-2">
-                                Spotted and fixed major bugs that have significant impact on the output of the result.
-                            </li>
-                            <li class="mb-2">
-                                Added new features that could aid researcher in obtaining specific kind of results.
-                            </li>
-                            <li class="mb-2">
-                                Improved performance on a part of the project significantly by making use of external
-                                library.
-                            </li>
-                            <li>
-                                Written detailed flowchart documentation on how a specific model works.
-                            </li>
-                        </ul>
                     </div>
-
+                    <div class="duration">Aug 2024 - Present</div>
                 </div>
-
-                <div class="container mx-lg-5 my-5 ps-4 border-start border-secondary border-5">
-                    <h1 class="fw-semibold text-body-emphasis mb-4">School Projects</h1>
-
-                    <div class="container mb-5 ps-4 border-start border-primary border-5">
-                        <div class="pb-3 mb-3 border-bottom border-black">
-                            <a href="https://games.digipen.edu/games/nekomancer" target="_blank">
-                                <img class="mb-3" src="/assets/nekomancer.png" alt="Nekomancer logo" width="150">
-                            </a>
-                            <h3 class="fw-semibold text-body-emphasis">Nekomancer - A 3d top-down action RPG game built
-                                with Unity</h3>
-                        </div>
-                        <ul>
-                            <li class="mb-2">
-                                Looked into Motion Capturing technologies such as using the Kinect or the mocap suit to
-                                cut down time needed to develop the game significantly.
-                            </li>
-                            <li class="mb-2">
-                                Researched and looked into topics such as shader effects and AI to improve the game.
-                            </li>
-                            <li class="mb-2">
-                                Led the developers, artist and designers to finish their task on time.
-                            </li>
-                            <li>
-                                Served as Producer.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="container ps-4 border-start border-primary border-5">
-                        <div class="pb-3 mb-3 border-bottom border-black">
-                            <a href="https://games.digipen.edu/games/alternative" target="_blank">
-                                <img class="mb-3" src="/assets/alternative.png" alt="Alternative logo" width="150">
-                            </a>
-                            <h3 class="fw-semibold text-body-emphasis">Alternative – A 2D turn-based RPG built with a
-                                custom engine made in C++</h3>
-                        </div>
-                        <ul>
-                            <li class="mb-2">
-                                Wrote the entire Game State Manager and the Entity Component System.
-                            </li>
-                            <li class="mb-2">
-                                Led a team of developers and delegate task to them based on the designer’s needs.
-                            </li>
-                            <li class="mb-2">
-                                Led the developers, artist and designers to finish their task on time.
-                            </li>
-                            <li>
-                                Served as Technical Lead.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <div class="horizontal-divider"></div>
-
-        <section id="footer">
-            <div class="container">
-                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                    <div class="col-md-4 d-flex align-items-center">
-                        <!-- Get personal logo -->
-                        <!--
-                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                      <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                    </a>
-                    -->
-                        <span class="mb-3 mb-md-0 text-body-secondary">Last updated 9/1/2024</span>
-                    </div>
-
-                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                        <li class="ms-3">
-                            <a class="text-body-secondary" href="https://linkedin.com/in/felix-f-bb651366"
-                                target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    class="bi bi-linkedin" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="ms-3">
-                            <a class="text-body-secondary" href="https://github.com/felixfyx"
-                                target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                                  </svg>
-                            </a>
-                        </li>
-                        <li class="ms-3">
-                            <a class="text-body-secondary" href="mailto:felixfyx@gmail.com" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
-                                    <path
-                                        d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
-                                </svg>
-                            </a>
-                        </li>
+                <div class="job-description">
+                    <ul>
+                        <li>Sole developer of April Tag Calibration Program for VR headsets, shipping successful upgrade kit within 4 months</li>
+                        <li>Built C# middleware application establishing end-to-end hardware-software connection via Serial Communication and RESTful APIs</li>
+                        <li>Collaborated with hardware engineers to write and organize maintainable C++ firmware code</li>
+                        <li>Partnered with external partners on game features and liaised with overseas teams for seamless product operation</li>
+                        <li>Worked with Product Managers and Creative Team to deliver shippable software meeting design vision under tight deadlines</li>
+                        <li>Created comprehensive end-user documentation and guides for product deployment</li>
+                        <li>Contributed to Release Candidate that became top-performing arcade game during testing phase</li>
                     </ul>
-                </footer>
+                </div>
             </div>
-        </section>
-    </main>
 
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-info">
+                        <!-- Replace with actual company logo -->
+                        <img src="assets/astar.png" alt="A*STAR" class="company-logo" onerror="this.style.display='none'">
+                        <div class="job-details">
+                            <div class="job-title">Research Engineer</div>
+                            <div class="company">Agency for Science, Technology and Research (A*STAR)</div>
+                        </div>
+                    </div>
+                    <div class="duration">Jun 2021 - Jul 2024</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Implemented Zero Trust Architecture based on NIST SP 800-207 specifications using Golang and SQLite</li>
+                        <li>Developed 5G Network Detection Anomaly Function per 3GPP specifications with Redis data distribution</li>
+                        <li>Worked with cloud computing platforms (AWS, Google Cloud Platform) to deploy services for enterprise demos</li>
+                        <li>Created IoT proof-of-concepts for multiple industries using Java, PHP, and C</li>
+                        <li>Attracted partnerships with major companies, government agencies, and research teams through innovative solutions</li>
+                    </ul>
+                </div>
+            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-info">
+                        <!-- Replace with actual company logo -->
+                        <img src="assets/smart.webp" alt="SMART" class="company-logo" onerror="this.style.display='none'">
+                        <div class="job-details">
+                            <div class="job-title">Software Engineer</div>
+                            <div class="company">Singapore-MIT Alliance for Research and Technology (SMART)</div>
+                        </div>
+                    </div>
+                    <div class="duration">Apr 2020 - Jun 2021</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Developed core components of urban simulation system using C++, improving performance and code readability</li>
+                        <li>Generated analytical insights through Python and R data visualization for research teams</li>
+                        <li>Fixed bugs, identified bottlenecks, and enhanced overall system performance</li>
+                        <li>Created comprehensive technical documentation enabling team knowledge transfer and future improvements</li>
+                        <li>Produced and presented meaningful graphs and analysis that provided better insights for researchers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Key Projects</h2>
+            <div class="project-grid">
+                <a href="https://www.laigames.com/games/virtual-rabbids-the-big-ride-ultra-hd" class="project-card" target="_blank" rel="noopener noreferrer">
+                    <!-- Replace with actual project image -->
+                    <img src="assets/VR Rabbids.png" alt="Rabbids VR Upgrade Kit" class="project-image" onerror="this.style.display='none'">
+                    <div class="project-content">
+                        <h3>Rabbids VR Upgrade Kit <span class="project-link-icon">↗</span></h3>
+                        <div class="project-tech">C#, VR Development, Hardware Integration</div>
+                        <div class="project-description">
+                            <ul>
+                                <li>Transformed demo concept code into full-fledged shippable product</li>
+                                <li>Implemented JSON configuration system for flexible program behavior</li>
+                                <li>Conducted extensive testing to observe VR headset and program limitations</li>
+                                <li>Successfully launched product to market with high volume sales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/smart-fm/simmobility-prod" class="project-card" target="_blank" rel="noopener noreferrer">
+                    <!-- Replace with actual project image -->
+                    <img src="assets/SimMobility.jpg" alt="SimMobility-LT Urban Simulator" class="project-image" onerror="this.style.display='none'">
+                    <div class="project-content">
+                        <h3>SimMobility-LT Urban Simulator <span class="project-link-icon">↗</span></h3>
+                        <div class="project-tech">C++, Python, R, Performance Optimization</div>
+                        <div class="project-description">
+                            <ul>
+                                <li>Spotted and fixed major bugs with significant impact on simulation results</li>
+                                <li>Added new features to aid researchers in obtaining specific kinds of results</li>
+                                <li>Improved performance significantly using external libraries</li>
+                                <li>Written detailed flowchart documentation on specific model functionality</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://games.digipen.edu/games/nekomancer" class="project-card" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/nekomancer.png" alt="Nekomancer 3D RPG" class="project-image" onerror="this.style.display='none'">
+                    <div class="project-content">
+                        <h3>Nekomancer 3D RPG <span class="project-link-icon">↗</span></h3>
+                        <div class="project-tech">Unity, Motion Capture, AI, Shader Programming</div>
+                        <div class="project-description">
+                            <ul>
+                                <li>Researched Motion Capturing technologies (Kinect, mocap suit) to reduce development time</li>
+                                <li>Implemented shader effects and AI systems to enhance game experience</li>
+                                <li>Led developers, artists and designers to finish tasks on time</li>
+                                <li>Served as Producer, facilitating team communication and delivering finished product</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://csrc.nist.gov/pubs/sp/800/207/final" class="project-card" target="_blank" rel="noopener noreferrer">
+                    <!-- Replace with actual project image -->
+                    <img src="zero-trust-project.jpg" alt="Zero Trust Architecture" class="project-image" onerror="this.style.display='none'">
+                    <div class="project-content">
+                        <h3>Zero Trust Architecture <span class="project-link-icon">↗</span></h3>
+                        <div class="project-tech">Golang, SQLite, Open Policy Agent (OPA)</div>
+                        <div class="project-description">
+                            <ul>
+                                <li>Implemented cybersecurity solution based on NIST SP 800-207 specifications</li>
+                                <li>Developed secure authentication and authorization systems using Golang and SQLite</li>
+                                <li>Integrated Open Policy Agent (OPA) for flexible policy management</li>
+                                <li>Attracted partnerships with major companies and government agencies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            
+            <div class="education-item">
+                <!-- Replace with actual school logo -->
+                <img src="assets/digipen.webp" alt="DigiPen Institute of Technology" class="school-logo" onerror="this.style.display='none'">
+                <div class="education-details">
+                    <div class="degree">Bachelor of Science in Computer Science</div>
+                    <div class="school">DigiPen Institute of Technology</div>
+                    <div class="year">2015 - 2019 | Specialization: Real-Time Interactive Simulation</div>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <img src="assets/sp.png" alt="Singapore Polytechnic" class="school-logo" onerror="this.style.display='none'">
+                <div class="education-details">
+                    <div class="degree">Diploma in Information Technology</div>
+                    <div class="school">Singapore Polytechnic</div>
+                    <div class="year">2010 - 2013 | Specialization: Game Development</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Felix Foo Yi Xiang. Built with passion for clean code and great design.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for any future navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add subtle scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for scroll animations
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Make header visible immediately
+        document.querySelector('header').style.opacity = '1';
+        document.querySelector('header').style.transform = 'translateY(0)';
+    </script>
 </body>
-
 </html>
